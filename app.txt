@@ -1,0 +1,92 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ */
+
+import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  useColorScheme,
+  View,
+  ScrollView,
+  Image,
+  Text
+} from 'react-native';
+import FlatCards from './component/FlatCards'; 
+import ImageCom from './component/ImageComponent';
+import OpenPage from './component/OpenPage'
+import PasswordGenerator from './component/PasswordGenerator';
+import BackGroundChanger from './component/BackGroundChanger';
+import DiceRoll from './component/DiceRoll';
+import Test from './component/test';  
+import CurrencyConvertor from './component/CurrencyConvertor';
+function App(): React.JSX.Element {
+
+
+  return (
+    <>
+    <SafeAreaView> 
+      <CurrencyConvertor/>
+      {/* <ScrollView scrollEnabled={true} style={{ backgroundColor: 'white' }}>
+  
+        <View style={[styles.container]}>
+          <Text
+            style={styles.heading}
+            onPress={() => console.log('Heading pressed!')}
+          >
+            Welcome to My App
+          </Text>
+          <Text style={styles.blacText}>
+            This is a custom Text component that extends React Native's Text component.
+          </Text>
+        </View> 
+ 
+        <PasswordGenerator />
+        <FlatCards heading='FlatCards' styleProperty={{}} cards={['card1', 'card2', 'card', 'card', 'card']} />
+
+        <FlatCards heading='Elevated' styleProperty={{ color: 'pink' }} cards={['card', 'card', 'card', 'card', 'card']} />
+        <ImageCom url="https://www.hubspot.com/hs-fs/hubfs/parts-url_1.webp?width=893&height=600&name=parts-url_1.webp" heading='PHOTO' body="some text" />
+        <OpenPage />
+        <ContactList />  
+        <BackGroundChanger/>
+          <DiceRoll/>
+
+      </ScrollView>
+       */}
+      <Text>END</Text>
+    </SafeAreaView>
+    </>
+  );
+}
+
+const styles = StyleSheet.create({
+
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
+  },
+  heading: {
+    textAlign: 'center',
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#000',
+  },
+  body: {
+    fontSize: 16,
+    color: 'white',
+  },
+  whiteText: {
+    color: 'yellow',
+  },
+
+  blacText: {
+    color: 'blue',
+  }
+});
+
+export default App;
